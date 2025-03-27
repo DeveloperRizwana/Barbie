@@ -158,6 +158,9 @@ body {
 
 .story-container {
   display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; */
 }
 
 .story-card {
@@ -170,6 +173,16 @@ body {
   align-items: center;
   border: 5px solid rgb(242, 139, 157);
   border-radius: 2rem;
+  
+  /* background: rgba(255, 255, 255, 0.1);   */
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.story-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .story-card img {
